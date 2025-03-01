@@ -16,7 +16,6 @@ const Navbar = () => {
           <div className="nav-right">
             <div className={`nav-items ${isOpen ? 'active' : ''}`}>
               <Link to="/">Home</Link>
-              <Link to="/works">Project</Link>
               <Link to="/about">About</Link>
               <Link to="/contact">Contact</Link>
             </div>
