@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -19,6 +20,314 @@
 }
 
 @keyframes logo-spin {
+=======
+:root {
+  --sakura-pink: #FFB7C5;
+  --sakura-dark: #FF69B4;
+  --bg-color: #FFF5F6;
+  --text-color: #2C3E50;
+}
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  cursor: none;
+}
+
+.cat-paw-cursor {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: all 0.15s ease;
+  background: rgba(255, 183, 197, 0.8);
+  border-radius: 50%;
+  box-shadow: 
+    15px 0 0 -7px rgba(255, 183, 197, 0.8),
+    -15px 0 0 -7px rgba(255, 183, 197, 0.8),
+    0 15px 0 -7px rgba(255, 183, 197, 0.8);
+}
+
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--sakura-dark);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: all 0.08s ease;
+}
+
+a:hover ~ .cat-paw-cursor,
+button:hover ~ .cat-paw-cursor {
+  transform: translate(-50%, -50%) scale(0.8);
+  background: rgba(255, 105, 180, 0.8);
+  box-shadow: 
+    15px 0 0 -7px rgba(255, 105, 180, 0.8),
+    -15px 0 0 -7px rgba(255, 105, 180, 0.8),
+    0 15px 0 -7px rgba(255, 105, 180, 0.8);
+}
+/* Add these new styles at the top of your existing CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100vw;
+  left: 0;
+  right: 0;
+}
+
+.nav-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.hero-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keep your existing styles below and update the navbar and hero related styles to remove padding/margin conflicts */
+/* Navbar Styles */
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(255, 183, 197, 0.3);
+}
+
+.nav-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--sakura-pink), var(--sakura-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.nav-brand::after {
+  content: '🌸';
+  position: absolute;
+  font-size: 1.2rem;
+  top: -10px;
+  right: -20px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-items a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-items a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, var(--sakura-pink), var(--sakura-dark));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-items a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--sakura-dark);
+    transition: 0.3s ease;
+  }
+
+  .nav-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items.active {
+    display: flex;
+  }
+}
+/* Hero Styles */
+/* Enhanced Hero Styles */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+.title-container {
+  margin-bottom: 2rem;
+}
+
+.glowing-text {
+  font-size: 5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, var(--sakura-pink), var(--sakura-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255, 183, 197, 0.5);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+.sliding-text {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.8s forwards 0.5s;
+}
+
+.fade-in {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1s;
+}
+
+/* Button Styles */
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-btn {
+  background: linear-gradient(45deg, var(--sakura-pink), var(--sakura-dark));
+  color: white;
+  border: none;
+}
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 183, 197, 0.3);
+  color: var(--sakura-dark);
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.1);
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: linear-gradient(45deg, var(--sakura-pink), var(--sakura-dark));
+  color: white;
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+}
+
+.glow-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-effect:after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 183, 197, 0.1) 0%, transparent 70%);
+  transform: rotate(45deg);
+  animation: glowRotate 3s linear infinite;
+}
+
+@keyframes glowRotate {
+>>>>>>> 0ac5c3d (I've created new components and route it using react-router-dom)
   from {
     transform: rotate(0deg);
   }
@@ -26,6 +335,7 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -39,4 +349,584 @@
 
 .read-the-docs {
   color: #888;
+=======
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.shine::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+/* Image Styles */
+.window-frame {
+  position: relative;
+  width: 450px;
+  height: 550px;
+  padding: 20px;
+  perspective: 1000px;
+}
+
+.window-border {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 15px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 
+    0 0 30px rgba(255, 183, 197, 0.2),
+    inset 0 0 30px rgba(255, 183, 197, 0.2);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.window-border:hover {
+  transform: rotateY(-5deg) rotateX(5deg);
+}
+
+.window-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.window-border:hover .profile-image {
+  transform: scale(1.1);
+}
+
+.sakura-branch {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.sakura-branch.top-left {
+  top: -20px;
+  left: -20px;
+  background-image: url('/path-to-sakura-branch.png');
+  transform: rotate(-45deg);
+}
+
+.sakura-branch.top-right {
+  top: -20px;
+  right: -20px;
+  background-image: url('/path-to-sakura-branch.png');
+  transform: rotate(45deg);
+}
+
+.sakura-branch.bottom-left {
+  bottom: -20px;
+  left: -20px;
+  background-image: url('/path-to-sakura-branch.png');
+  transform: rotate(-135deg);
+}
+
+.sakura-branch.bottom-right {
+  bottom: -20px;
+  right: -20px;
+  background-image: url('/path-to-sakura-branch.png');
+  transform: rotate(135deg);
+}
+
+.window-border:hover .sakura-branch {
+  filter: drop-shadow(0 0 10px rgba(255, 183, 197, 0.5));
+}
+
+/* Add these keyframes for falling petals inside the window */
+.window-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 183, 197, 0.1)
+  );
+  pointer-events: none;
+}/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px rgba(255, 183, 197, 0.5);
+  }
+  to {
+    text-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hover-rotate {
+  transition: transform 0.3s ease;
+}
+
+.hover-rotate:hover {
+  transform: rotate(360deg);
+}
+
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.social-icon.github {
+  color: #333;
+}
+
+.social-icon.linkedin {
+  color: #0077B5;
+}
+
+.social-icon.twitter {
+  color: #1DA1F2;
+}
+
+.social-icon.behance {
+  color: #1769FF;
+}
+
+.social-icon.dribbble {
+  color: #EA4C89;
+}
+
+.social-icon:hover.github {
+  background: #333;
+  color: white;
+}
+
+.social-icon:hover.linkedin {
+  background: #0077B5;
+  color: white;
+}
+
+.social-icon:hover.twitter {
+  background: #1DA1F2;
+  color: white;
+}
+
+.social-icon:hover.behance {
+  background: #1769FF;
+  color: white;
+}
+
+.social-icon:hover.dribbble {
+  background: #EA4C89;
+  color: white;
+}.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sakura-house {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  padding-top: 40px; /* Changed from margin to padding */
+}
+
+
+
+.house-frame {
+  position: relative;
+  width: 80%;
+  height: calc(100% - 40px); /* Adjusted for roof space */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    inset 0 0 30px rgba(255, 183, 197, 0.2);
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.house-frame:hover {
+  transform: translateY(-10px);
+}
+
+.window-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.house-frame:hover .profile-image {
+  transform: scale(1.1);
+}
+
+.sakura-decor {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: var(--sakura-pink);
+  opacity: 0.2;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.sakura-decor.top-left {
+  top: -20px;
+  left: -20px;
+}
+
+.sakura-decor.top-right {
+  top: -20px;
+  right: -20px;
+}
+
+.sakura-decor.bottom-left {
+  bottom: -20px;
+  left: -20px;
+}
+
+.sakura-decor.bottom-right {
+  bottom: -20px;
+  right: -20px;
+}
+
+.house-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(255, 183, 197, 0.3);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+@media (max-width: 968px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .sakura-house {
+    width: 300px;
+    height: 400px;
+  }
+}
+  .hero-left {
+    align-items: center;
+  }
+
+  .hero-left h1 {
+    font-size: 3rem;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: 400px;
+  }
+
+/* Sakura Petals Animation */
+.petals-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.petal {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--sakura-pink);
+  border-radius: 150% 0 150% 0;
+  animation: falling linear forwards;
+  opacity: 0.6;
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  
+  .nav-items {
+    display: none;
+  }
+  
+  .nav-items.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 0;
+  }
+  
+  .nav-items a {
+    margin: 0.5rem 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+.about {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(255, 183, 197, 0.1), rgba(255, 105, 180, 0.1));
+  padding: 6rem 2rem;
+}
+
+.about-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  background: linear-gradient(45deg, var(--sakura-pink), var(--sakura-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.intro-card, .achievements-card, .current-work, .career-goals, .personal-touch {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.intro-card:hover, .achievements-card:hover {
+  transform: translateY(-5px);
+}
+
+.fun-facts p {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--sakura-pink);
+}
+
+.cta-section {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 183, 197, 0.2);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+}
+
+h3 {
+  color: var(--sakura-dark);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1rem;
+  width: 20px;
+  height: 20px;
+  background: var(--sakura-pink);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(255, 183, 197, 0.3);
+}
+
+.timeline-item h4 {
+  color: var(--sakura-dark);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 968px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+.skill-icon {
+  font-size: 2rem;
+}
+
+.skill-icon.react {
+  color: #61DAFB;
+}
+
+.skill-icon.html {
+  color: #E34F26;
+}
+
+.skill-icon.css {
+  color: #1572B6;
+}
+
+.skill-icon.javascript {
+  color: #F7DF1E;
+}
+
+.skill-icon.bootstrap {
+  color: #7952B3;
+>>>>>>> 0ac5c3d (I've created new components and route it using react-router-dom)
 }
