@@ -17,6 +17,7 @@ const Navbar = () => {
             <div className={`nav-items ${isOpen ? 'active' : ''}`}>
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
+              <Link to="/project">Project</Link>
               <Link to="/contact">Contact</Link>
             </div>
             <div className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
