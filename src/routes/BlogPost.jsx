@@ -14,17 +14,17 @@ const blogPosts = [
   {
     id: "day2",
     title: "Day 2: Subic Tour",
-    image: "/d2.jpg",
+    image: "/d2-2.jpg",
     content: `
-      We tour around Subic Bay and I'm so amazed how peaceful the surroundings is. The place is rich in history. We were told that Subic Bay adopted the U.S rules and practices around, just like the "First Stop, First Go".
-      
-      It wasn't also governed by the Philipine Goverment but instead by the SBMA. Only Well off reside there, and there is also no public transportation. Subic has low crime rate and well guarded place as it have its own swat, forest ranger, and own harbor patrol.
+      We toured around Subic Bay, and I was truly amazed by how peaceful and well-maintained the surroundings were. The place is steeped in history, and we learned that Subic Bay adopted many U.S. rules and practices — one interesting example being the "First Stop, First Go" traffic system.
+
+      Interestingly, Subic Bay isn’t governed by the Philippine government but by the Subic Bay Metropolitan Authority (SBMA). It's primarily home to the well-off, and there’s no public transportation within the area. The community enjoys a remarkably low crime rate, thanks to its dedicated security forces, which include their own SWAT team, forest rangers, and harbor patrol. It truly feels like a secure and self-sustaining zone.
     `
   },
   {
     id: "day3",
     title: "Day 3: Museum Tour",
-    image: "/d3.jpg",
+    image: "/d3-3.jpg",
     content: `On the third day of our tour, we explored the rich cultural and historical heritage of the Philippines by visiting the Philippine National Museum and the Manuel Quezon Museum. At the National Museum, we marveled at centuries-old artifacts, intricate artworks, and fascinating exhibits that told the story of the country's past—from pre-colonial times to the present. Walking through its grand halls gave us a deeper appreciation of Filipino identity and creativity. Later, at the Manuel Quezon Museum, we learned about the life and legacy of the first President of the Philippine Commonwealth. His contributions to Philippine independence and governance were highlighted through personal memorabilia, photographs, and historical documents. It was an enriching day that allowed us to connect with the nation's roots and the remarkable figures who shaped its history.
     `
   },
@@ -32,7 +32,7 @@ const blogPosts = [
   {
     id: "day4",
     title: "Day 4: Bangko Sentral ng Pilipinas and Hi-Tech Tour",
-    image: "/d4.jpg",
+    image: "/d4-4.jpg",
     content: `On the fourth day of our tour, we visited the Bangko Sentral ng Pilipinas, where we had the rare opportunity to witness the intricate process of how money and gold are made and secured. Although we weren’t allowed to take any photos inside due to strict security protocols, the experience was incredibly informative and eye-opening. We learned about the steps involved in currency production, the importance of maintaining economic stability, and the role of the central bank in the country’s financial system. Seeing the actual machinery and processes behind money-making gave us a whole new appreciation for how much effort goes into safeguarding the nation’s economy
     
     Visit to a High-Tech Engineering Company
@@ -43,7 +43,7 @@ const blogPosts = [
   {
     id: "day5",
     title: "Day 5: Museum Tour",
-    image: "/d5.jpg",
+    image: "/d5-5.jpg",
     content: `On the fifth day of our tour, we explored the operations behind the Light Rail Transit (LRT) system with a visit to the LRT station and its depot near Santolan. It was a fascinating experience as we observed how the trains work, where they are stored, and how they undergo maintenance and repairs to ensure passenger safety and efficiency. We saw the control rooms, maintenance facilities, and the technical processes that keep the trains running smoothly every day. One of the highlights was getting the chance to ride the LRT ourselves, traveling around the Santolan station area, which gave us a real feel of the daily commute and the importance of reliable public transportation in Metro Manila. The tour gave us a better understanding of how much planning and engineering go into maintaining such a massive transport system.
     `
   },
@@ -51,7 +51,7 @@ const blogPosts = [
   {
     id: "day6",
     title: "Day 6: Baguio Tour",
-    image: "/d6.jpg",
+    image: "/d6-6.jpg",
     content: `On the sixth day of our tour, we began an unforgettable journey as we traveled to Baguio around midnight. The night ride was smooth, peaceful, and filled with excitement—probably the best ride I’ve ever had. As the sun began to rise, we arrived in the cool mountain city, with our first stop at the beautiful Strawberry Farm, where we saw rows of fresh strawberries and even got to pick some ourselves. Next, we visited the Chinese Gold Bell, a serene and culturally rich spot that added a spiritual touch to our morning. Afterward, we checked in at our hotel and enjoyed a hearty breakfast to recharge before continuing our exploration.
 
     Our afternoon tour took us to several of Baguio’s most iconic landmarks. We visited the Philippine Military Academy (PMA), where we saw disciplined cadets and impressive military displays. Then we headed to The Mansion, the official summer residence of the Philippine president, followed by a breathtaking stop at Mine’s View Park, where we took in the scenic mountain views and enjoyed the local crafts and snacks. As evening came, we had a satisfying dinner, then capped the day with a relaxing night stroll. We visited SM Baguio, wandered through Burnham Park, and experienced the vibrant energy of the famous Baguio Night Market. It was a perfect end to an amazing day filled with nature, history, and culture.
@@ -61,7 +61,7 @@ const blogPosts = [
   {
     id: "day7",
     title: "Day 7: Baguio You Will Be Missed!",
-    image: "/d7.jpg",
+    image: "/d7-7.jpg",
     content: `On the seventh and final day of our tour, my roommates Allana, Lyrra, and I decided to take it slow and just rest in our hotel room instead of strolling around the city. After days of traveling and exploring, it felt good to simply relax and reflect on the amazing experiences we had. Around 10 AM, we had our breakfast and began preparing for our journey back to Manila. There was a quiet sadness in the air as we packed our things—Baguio had captured our hearts with its cool weather, scenic views, and unforgettable memories. The time we spent there felt too short, and we all wished we had a little more time to explore and enjoy. By 12 noon, we were on the road back to Manila, carrying with us the joy, learning, and bonds we made throughout the entire tour.
     `
   },
@@ -69,8 +69,12 @@ const blogPosts = [
   {
     id: "day8",
     title: "Day 8: Goodbye Manila",
-    image: "/d8.jpg",
-    content: `On the eighth and final day of our tour, it was time to head back home to Zamboanga. There was a bittersweet feeling in the air—sadness that the journey was ending, but also gratitude for all the memories we had made. As we prepared to leave, we couldn't help but feel thankful to the amazing staff of DJM Travela and Tours, who took such good care of us throughout the trip, making everything smooth and enjoyable. On our way to NAIA, I took one last look at the towering buildings of Manila, a sight that had become familiar over the past days. It was a quiet moment of reflection—feeling both sad to leave and satisfied with the unforgettable experience we had been blessed with.
+    image: "/d8-8.jpg",
+    content: `On the eighth and final day of our tour, it was time to head back home to Zamboanga. There was a bittersweet feeling in the air—sadness that the tour was ending, but also gratitude for all the memories we had made.
+    
+    As we prepared to leave, we couldn't help but feel thankful to the amazing staff of DJM Travela and Tours, who took such good care of us throughout the trip, making everything smooth and enjoyable. On our way to airport, I took one last look at the towering buildings of Manila, a sight that had become familiar over the past days. It was a quiet moment of reflection—feeling both sad to leave and satisfied with the unforgettable experience we had been blessed with.
+
+    In NAIA we stroll around and bought a krispy krene as a pasalubong and also we saw Anthony Jennings and took a photo with him. 
     `
   },
 
@@ -110,7 +114,7 @@ const BlogPost = () => {
   }
 
   return (
-    <section className="blog">
+    <section className="blog-post">
       <div className="page-container">
         {/* Images First */}
         <div className="blog-image-wrapper">
