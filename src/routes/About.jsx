@@ -1,9 +1,14 @@
 import CatPawCursor from '../components/CatPawCursor';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaBootstrap } from 'react-icons/fa';
+<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
 
 const About = () => {
   const navigate = useNavigate();
+=======
+
+const About = () => {
+>>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609
   return (
     <section className="about">
       <CatPawCursor />
@@ -70,7 +75,11 @@ const About = () => {
           </div>
 
           <div className="cta-section">
+<<<<<<< HEAD
           <button className="primary-btn pulse"onClick={() => navigate('/projects')}Projects >View Projects</button>
+=======
+            <button className="primary-btn pulse">View My Projects</button>
+>>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609
           </div>
         </div>
       </div>

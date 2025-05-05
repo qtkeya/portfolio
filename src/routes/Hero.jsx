@@ -36,6 +36,7 @@ const Hero = () => {
                         <p className="fade-in">I craft seamless, interactive, and visually stunning web solutions that bring ideas to life. From responsive designs to dynamic user interfaces, I am passionate about building experiences that leave a lasting impact.</p>
                         <div className="hero-buttons">
                             <button className="primary-btn pulse" onClick={() => navigate('/about')}>About Me</button>
+<<<<<<< HEAD
 
                             <button className="secondary-btn glow-effect" onClick={() => navigate('/contact')}Contact >Contact Me</button>
                             
@@ -68,6 +69,19 @@ const Hero = () => {
                 aria-label="Facebook"
                 >
                 <FaFacebook size={30} />
+=======
+                            <button className="secondary-btn glow-effect">Contact Me</button>
+                        </div>
+                        <div className="social-links floating">
+                            <a href="#" className="social-icon github hover-rotate">
+                                <FaGithub size={24} />
+                            </a>
+                            <a href="#" className="social-icon linkedin hover-rotate">
+                                <FaLinkedin size={24} />
+                            </a>
+                            <a href="#" className="social-icon facebook hover-rotate">
+                                <FaFacebook size={24} />
+>>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609
                             </a>
                         </div>
                     </div>
@@ -91,4 +105,8 @@ const Hero = () => {
     );
 };
 
+<<<<<<< HEAD
 export default Hero;
+=======
+export default Hero;
+>>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609

@@ -972,6 +972,7 @@ h3 {
     height: 350px;
   }
 }
+<<<<<<< HEAD
 
 /* Projects*/ 
 .page-container {
@@ -1115,3 +1116,5 @@ h3 {
 .social-icons a:hover {
   color: var(--sakura-dark, #ec4899);
 }
+=======
+>>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609
