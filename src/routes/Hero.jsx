@@ -36,52 +36,39 @@ const Hero = () => {
                         <p className="fade-in">I craft seamless, interactive, and visually stunning web solutions that bring ideas to life. From responsive designs to dynamic user interfaces, I am passionate about building experiences that leave a lasting impact.</p>
                         <div className="hero-buttons">
                             <button className="primary-btn pulse" onClick={() => navigate('/about')}>About Me</button>
-<<<<<<< HEAD
 
-                            <button className="secondary-btn glow-effect" onClick={() => navigate('/contact')}Contact >Contact Me</button>
-                            
+                            <button className="secondary-btn glow-effect" onClick={() => navigate('/contact')} Contact >Contact Me</button>
+
                         </div>
                         <div className="social-links floating">
 
-                        <a
-                    href="https://github.com/qtkeya"
-                    className="social-icon github hover-rotate"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                        >
-                             <FaGithub size={30} />
-          </a>
-                        <a
-                    href="https://www.linkedin.com/in/nurkiya-sueno-35337b361/"
-                    className="social-icon linkedin hover-rotate"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                    >
-                    <FaLinkedin size={30} />
-                </a>
-                <a
-                 href="https://www.facebook.com/keyyykim"
-                className="social-icon facebook hover-rotate"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                >
-                <FaFacebook size={30} />
-=======
-                            <button className="secondary-btn glow-effect">Contact Me</button>
-                        </div>
-                        <div className="social-links floating">
-                            <a href="#" className="social-icon github hover-rotate">
-                                <FaGithub size={24} />
+                            <a
+                                href="https://github.com/qtkeya"
+                                className="social-icon github hover-rotate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                            >
+                                <FaGithub size={30} />
                             </a>
-                            <a href="#" className="social-icon linkedin hover-rotate">
-                                <FaLinkedin size={24} />
+                            <a
+                                href="https://www.linkedin.com/in/nurkiya-sueno-35337b361/"
+                                className="social-icon linkedin hover-rotate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                            >
+                                <FaLinkedin size={30} />
                             </a>
-                            <a href="#" className="social-icon facebook hover-rotate">
-                                <FaFacebook size={24} />
->>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609
+                            <a
+                                href="https://www.facebook.com/keyyykim"
+                                className="social-icon facebook hover-rotate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Facebook"
+                            >
+                                <FaFacebook size={30} />
+
                             </a>
                         </div>
                     </div>
@@ -104,9 +91,4 @@ const Hero = () => {
         </>
     );
 };
-
-<<<<<<< HEAD
 export default Hero;
-=======
-export default Hero;
->>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609
