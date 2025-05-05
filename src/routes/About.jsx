@@ -1,14 +1,8 @@
 import CatPawCursor from '../components/CatPawCursor';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaBootstrap } from 'react-icons/fa';
-<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
-
 const About = () => {
   const navigate = useNavigate();
-=======
-
-const About = () => {
->>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609
   return (
     <section className="about">
       <CatPawCursor />
@@ -20,7 +14,7 @@ const About = () => {
               <h3>Introduction</h3>
               <p>Hi! I'm Nurkiya S. Sueno, a passionate Frontend Developer who loves creating beautiful and functional web experiences.</p>
             </div>
-            
+
             <div className="background-card">
               <h3>Background</h3>
               <p>Part of a cheering squad, I bring enthusiasm and teamwork into everything I do. I also have a deep love for traveling and exploring new places.</p>
@@ -53,7 +47,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="about-right">
           <div className="current-work">
             <h3>Currently Working On</h3>
@@ -75,15 +69,12 @@ const About = () => {
           </div>
 
           <div className="cta-section">
-<<<<<<< HEAD
-          <button className="primary-btn pulse"onClick={() => navigate('/projects')}Projects >View Projects</button>
-=======
-            <button className="primary-btn pulse">View My Projects</button>
->>>>>>> e0382cb1ddf279200da5098f9c39dc518ec2b609
-          </div>
-        </div>
-      </div>
-    </section>
+            <button className="primary-btn pulse" onClick={() => navigate('/projects')} Projects >View Projects</button>
+
+          </div >
+        </div >
+      </div >
+    </section >
   );
 };
 
