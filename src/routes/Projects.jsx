@@ -11,7 +11,7 @@ const projectsData = [
     tech: ["React", "CSS", "JavaScript"]
   },
   {
-    title: "Science Calculator",
+    title: "Scientific Calculator",
     description: "A science calculator that is from our weekly prokect and is made by RaectJs",
     github: "https://github.com/qtkeya/scientific-calculator.git",
     demo: "https://scientific-calcu.netlify.app/",
