@@ -42,7 +42,7 @@ const blogPosts = [
   
   {
     id: "day5",
-    title: "Day 5: Museum Tour",
+    title: "Day 5: LRT Tour",
     image: "/d5-5.jpg",
     content: `On the fifth day of our tour, we explored the operations behind the Light Rail Transit (LRT) system with a visit to the LRT station and its depot near Santolan. It was a fascinating experience as we observed how the trains work, where they are stored, and how they undergo maintenance and repairs to ensure passenger safety and efficiency. We saw the control rooms, maintenance facilities, and the technical processes that keep the trains running smoothly every day. One of the highlights was getting the chance to ride the LRT ourselves, traveling around the Santolan station area, which gave us a real feel of the daily commute and the importance of reliable public transportation in Metro Manila. The tour gave us a better understanding of how much planning and engineering go into maintaining such a massive transport system.
     `
